@@ -4,10 +4,8 @@
         <title>Loren Ipsum - Sterna blog</title>
         <meta charset="utf-8" />
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="http://blog.sterna.ch/theme/static/style.css" rel="stylesheet" />
+        <link href="http://localhost:8000/theme/style.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="http://blog.sterna.ch/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Sterna blog Full Atom Feed" />
-        <link href="http://blog.sterna.ch/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="Sterna blog Categories Atom Feed" />
     </head>
 
     <body id="index" class="archive">
@@ -16,22 +14,22 @@
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container container-nav">
                 <div class="navbar-header">
-                    <a class="" href="http://www.sterna.ch">
-                        <img src="http://blog.sterna.ch/theme/static/title.png" width="139" height="50" alt="Sterna facturation">
+                    <a class="" href="http://www.sterna.ch" title="Accès au site de l'application" target="_blank">
+                        <img src="http://localhost:8000/theme/title.png" width="139" height="50" alt="Sterna facturation">
                     </a>
-                    <a id="a-text" class="" href="/"> Blog </a>
+                    <a id="a-text" class="" href="/" title="Page principale du blog"> Blog </a>
                 </div>
-                <button type="button" id="btn-test" class="btn btn-success navbar-btn">Essayer l'application</button>
-                <img src="http://blog.sterna.ch/theme/static/sterna.png" id="sterna-logo" width="104" height="58" alt="Sterna facturation">
+                <a href="http://www.sterna.ch/test" title="" target="_blank" id="btn-test" class="btn btn-success navbar-btn">Essayez l'application</a>
+                <img src="http://localhost:8000/theme/sterna.png" id="sterna-logo" width="104" height="58" alt="Sterna facturation">
             </div>
         </div>
 
         <div class="container">
 
-<section id="content" class="article content">
+<section class="article content">
     <header>
         <h2 class="entry-title">
-            <a href="http://blog.sterna.ch/loren-ipsum.html" rel="bookmark" title="Permalink to Loren Ipsum">
+            <a href="http://localhost:8000/loren-ipsum.html" rel="bookmark" title="Permalink to Loren Ipsum">
                 Loren Ipsum
             </a>
         </h2>
@@ -39,8 +37,11 @@
             <time class="text-muted">
                 27 août 2016
             </time>
+            <span class="text-muted">
+                - Thierry Ducrest
+            </span>
             <!--
-                    <a href="http://blog.sterna.ch/tag/test.html">Test</a>
+                    <a href="http://localhost:8000/tag/test.html">Test</a>
             -->
         </span>
         
@@ -56,13 +57,19 @@
 
             <footer id="contentinfo" class="footer">
                     <nav class="pull-right bottom-nav">
-                        <a href="http://blog.sterna.ch/feeds/all.atom.xml">RSS</a>
+                        <a href="http://localhost:8000/None">RSS</a>
                     </nav>
                     <nav class="pull-left bottom-nav">
-                    <address id="about" class="vcard body">
+                        <ul class="list-inline">
+                            <!--
+                            <li>
                     &copy; Sterna
-                    </address>
+                            </li>
+                            -->
+                            <li>
                     <a href="http://www.sterna.ch">Site principal</a>
+                            </li>
+                        </ul>
 
                     </nav>
             </footer>

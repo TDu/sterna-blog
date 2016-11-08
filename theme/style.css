@@ -1,16 +1,53 @@
 
 #topbar{
-    height:5px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height:4px;
     background-color: #21a2f2;
     background: url("./sprite.png") repeat-x;
 }
-
 /****************************/
 
-/* Space out content a bit */
 body {
-  padding-bottom: 20px;
+    padding-top: 58px;
+    padding-bottom: 20px;
+    color: #111;
 }
+
+.navbar-fixed-top {
+    top: 4px;
+}
+#sterna-logo {
+    position:absolute;
+    right: 0px;
+    top: 0px;
+}
+.navbar-header a {
+    font-size: 2em;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+.navbar-right {
+    padding-right: 100px;
+}
+.container-nav {
+    position: relative;
+}
+#btn-test {
+    position: absolute;
+    top:0;
+    right: 120px;
+}
+
+#a-text {
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+}
+
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -34,6 +71,7 @@ body {
 
 /* Custom page footer */
 .footer {
+  margin-top: 4em;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -67,6 +105,14 @@ body {
   margin-top: 28px;
 }
 
+.post-meta {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.entry-content {
+    margin-top: 10px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -84,4 +130,14 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Hide sterne and move test button on the right side for small screen*/
+@media (max-width: 500px) {
+    #sterna-logo {
+        display: none;
+    }
+    #btn-test {
+        right: 10px;
+    }
 }
